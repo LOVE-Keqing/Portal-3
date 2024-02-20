@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.logoPortal3 {
+  width: 100px;
+  height: 100px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+.navbar-brand h1 {
+  color: #bb86fc;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.nav-item a {
+  color: #9b91a7;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.nav-item a:hover {
+  color: #bb86fc;
+  text-decoration: none;
+}
+
+.nav-item button {
+  background-color: #9b91a7;
+  color: #2c2c2c;
+}
+
+.nav-item button:hover {
+  background-color: #bb86fc;
+  color: #2c2c2c;
+}
+
+.separation {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-image: linear-gradient(to right, #9486FC, #BB86FC); 
+}
