@@ -8,6 +8,7 @@ body {
   height: 100px;
   margin-left: 5px;
   margin-right: 10px;
+  border-radius: 5px;
 }
 
 nav li {
@@ -21,6 +22,11 @@ nav li {
   margin-left: 5px;
 }
 
+.navbar-nav {
+  flex-direction: row;
+  align-items: center;
+}
+
 .nav-item a {
   color: #9b91a7;
   text-decoration: none;
@@ -32,14 +38,51 @@ nav li {
   text-decoration: none;
 }
 
-.nav-item button {
-  background-color: #9b91a7;
+#navLink {
+  background: #131416;
+  color: #9b91a7;
+  width: 150px;
+  height: 80px;
+  border: 1px solid #9486FC;
+  border-radius: 10px;
+  overflow: hidden;
+  font-weight: 700;
+  z-index: 0;
+  position: relative;
+}
+
+#navLink::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9486FC;
+  border-radius: 50% 50% 10px 10px;
+  transition: all .5s;
+  z-index: -1;
+}
+
+#navLink:hover::before {
+  top: 0;
+  border-radius: 0;
+}
+
+#navLink:hover {
   color: #2c2c2c;
 }
 
-.nav-item button:hover {
-  background-color: #bb86fc;
+#connexion {
+  background-color: #9b91a7;
+  width: 150px;
+  height: 80px;
   color: #2c2c2c;
+  border: 1px solid #9b91a7;
+}
+
+#connexion:hover {
+  background-color: #bb86fc;
 }
 
 .separation {
